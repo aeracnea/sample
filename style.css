@@ -216,6 +216,7 @@ p{
   font-size: 15px;
 }
 /***************************           Cards            *******************************/
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* see notes below */
@@ -303,18 +304,6 @@ p{
 .category__05 {
   background-color: #8350a0;
 }
-.card1{
-  background-color: dodgerblue;
-  color: white;
-  padding: 1rem;
-  font-size: 20px;
-}
-.cardz{
-  max-width: auto;
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 1rem;
-}
 .title{
   text-align: center;
   font-weight: bold;
@@ -356,20 +345,3 @@ p{
 .button:hover{
  background-color: #649d66; 
 }
-@media (min-width: 400px) {
-  .cardz {
-   grid-template-columns: repeat(2, 1fr);
-   margin:40px;
-  }
-}
-@media (min-width: 720px) {
-  .cardz {
-   grid-template-columns: repeat(4, 1fr);
-   margin:40px;
-  }
-}
-@media (max-width: 300px) {
-  .cardz {
-   grid-template-columns: repeat(1, 1fr);
-   margin:40px;
-  }
