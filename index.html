@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav>
+      <ul>
+		<li class="logo">LOGO HERE</li>
+		<li class="items"><a href="#">Home</a></li>
+		<li class="items"><a href="#">Best Seller</a></li>
+		<li class="items"><a href="#">Our Food</a></li>
+		<li class="items"><a href="#">Contact</a></li>
+		<li class="items"><a href="#">About Us</a></li>
+		<li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+		</ul>
+	</nav>
+	<section>
+		<div class="container">
+			<div class="darkoverlay"></div>
+			<div class="main-food">
+        <h5 class="maintext-1">WIDE VARIETY OF CHOICE</h5>
+				<h1 class="maintext-2"><span class="text-color">Delicous</span> Recipes</h1>
+				<h5 class="maintext-3">We Provide the List of Top Food Recipes Here in <span class="Bulacan-text">Bulacan</span></h5>
+         <button class="button-main"><a class="text-recipe" href="https://www.w3schools.com/css/css3_buttons.asp">GET RECIPE NOW</a></button>
+			</div>
+		</div>
+	</section>
+<div class="container-title">
+  <div class="title">OUR TOP RECIPE</div>
+  <div class="title-sm">These are the Foods Recipe that are Recently use in Bulacan</div>
+</div>
+<section class="cards">
+<!--   card 1 -->
+  <article class="card">
+    <picture class="thumbnail">
+         <img class="category__01" src="ensaimada.jpg" alt="" />
+    </picture>
+    <div class="card-content">
+      <p class="category category__01">Malolos City</p>
+      <h2 class="text-center">Ensaimada</h2>
+      <button class="button"><a class="text-recipe" href="https://www.w3schools.com/css/css3_buttons.asp">GET RECIPE NOW</a></button>
+   </div><!-- .card-content -->
+  </article>
+<!--   card 2 -->
+  <article class="card">
+    <picture class="thumbnail">
+         <img class="category__02" src="Lechonmanok.jpg" alt="" />
+    </picture>
+    <div class="card-content">
+      <p class="category category__02">Baliuag</p>
+      <h2 class="text-center">LECHONG MANOK</h2>
+       <button class="button"><a class="text-recipe" href="https://www.w3schools.com/css/css3_buttons.asp">GET RECIPE NOW</a></button>
+   </div><!-- .card-content -->
+  </article>
+<!--   card 3 -->
+  <article class="card">
+    <picture class="thumbnail">
+         <img class="category__03" src="pusit.jpg" alt="" />
+    </picture>
+    <div class="card-content">
+      <p class="category category__03">Plaridel</p>
+      <h2 class="text-center">SIZZLING PUSIT</h2>
+       <button class="button"><a class="text-recipe" href="https://www.w3schools.com/css/css3_buttons.asp">GET RECIPE NOW</a></button>
+   </div><!-- .card-content -->
+  </article>
+<!--   card 4 -->
+  <article class="card">
+    <picture class="thumbnail">
+         <img class="category__04" src="sinugbangbaboy.jpg" alt="" />
+    </picture>
+    <div class="card-content">
+      <p class="category category__04">Sta. Maria</p>
+      <h2 class="text-center ">SINUGBANG BABOY</h2>
+       <button class="button"><a class="text-recipe" href="https://www.w3schools.com/css/css3_buttons.asp">GET RECIPE NOW</a></button>
+   </div><!-- .card-content -->
+  </article>	
+</section>
+
+<div class="cardz">
+  <div class="card1">
+    <div>
+      <h6> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+    </div>
+  </div>
+  <div class="card1">TWO</div>
+</div>
+    <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+      });
+    </script>
+  </body>
+</html>
